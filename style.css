@@ -1,0 +1,79 @@
+/*Site responsive özelliğine uygundur.*/
+
+body{
+    background: linear-gradient(90deg, #794d00,#c6933c, #794d00);    /*Gradient (Coklu renk) arkaplan kodlari*/	
+}
+
+.makine{                                                                           /*Bütün makineyi kapsayan ayarlar*/
+    background: rgb(86, 86, 86);
+    border: 2px solid rgb(123, 123, 123);
+    border-radius: 5px;
+    height: auto;
+    width: 19rem;
+    text-align: center;
+    margin:auto;
+    margin-bottom: 6rem;
+    align-items: center;
+    margin-top: 1rem;
+    padding-bottom: 0.5rem;
+    box-shadow: 0.1px 0.1px;
+}
+
+#susleme{                                                                         /*Marka ve Güneş paneli kısmı için display ayarı*/
+    display: flex;
+}
+
+#marka{                                                                           /*Marka kısmı*/
+    font-weight: bold;
+    text-align: left;
+    margin: 9px;
+    margin-left: 25px;
+    color: #e4e4e4;
+    font-style: italic;
+}
+
+#gunesenerjisi{                                                                    /*Güneş paneli kısmı*/
+    width:7rem;
+    height: 20px;
+    margin: 8px;
+    margin-left: 4.5rem;
+    background-color: #3e2a08;
+}
+
+#monitor{                                                                           /*Yalnızca monitor(çıktı ekranı) kısmı*/                                        
+    background-color: rgb(57, 48, 36);
+    color: rgb(173, 125, 73);
+    width: 15.2rem;
+    height: 30px;
+    font-family: 'Orbitron', sans-serif;
+}
+
+
+table{
+    margin: auto;                                                                   /*Tuşların hepsini ortalayabilmek için tablo ayarları*/
+} 
+
+.tuslar{                                                                             /*Tüm tuşlar için ortak ayarlar*/
+    background-color: rgb(170, 170, 170);
+    color: rgb(0, 0, 0);
+    width: 60px;
+    height: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 5%;
+}
+
+.tuslar:hover{                                                                        /*Tuşların üzerine gelince çalışan efektler*/
+    background-color: rgb(143, 133, 133);
+    color: rgb(200, 0, 0);
+    transition: all 0.3s;
+}
+
+#esittir{                                                             /*Eşittir (=) butonu için animasyon tetikleyicisi*/
+    animation: logocolchanger 3s infinite;
+}
+
+@keyframes logocolchanger{                                            /*Eşittir butonu animasyonu, arkaplan ve font renkleri değişiyor*/
+    0%{background: rgb(170, 170, 170);color: black;}
+    50%{background: rgb(255, 204, 175);color: rgb(255, 0, 0);font-size: 13px;}
+    100%{background: rgb(170, 170, 170);color: black;}
+}

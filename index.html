@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hesap Makinesi</title>
+    <link rel="stylesheet" href="style.css"><!--CSS komutlari entegre edildi.-->
+    <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' type='text/css'>
+    <!--Monitör için dijital font-->
+</head>
+
+<body>
+    
+        <div class="makine">                <!--Butun Makineyi kapsayan div-->
+            <div class="ust">               <!--Ust kisimda bulunan monitor ve cesitli objeleri kapsayan div-->
+                <div id="susleme">
+                    <p id="marka">CASSIO</p>
+                    <input type="button" id="gunesenerjisi" value=" " onclick="corum()" />           
+                </div>
+                <input type="text" id="monitor"/>
+            </div>
+            <div class="buttonlar">         <!--Butonlar icin karmasayi azaltmak ve kodlamada kolaylik acisindan liste kullanildi-->
+                <table>
+                    <tr>
+                        <td><input type="button" class="tuslar" value="Fonk1"
+                                onclick="fonk1()" /> </td>
+                        <td><input type="button" class="tuslar" value="|x|" onclick="mutlak()" />
+                        </td>
+                        <td><input type="button" class="tuslar" value="Fonk2"
+                                onclick="fonk2()"/> </td>
+                        <td><input type="button" class="tuslar" value="C" onclick="temizle()" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="tuslar" value="2^x" onclick="ikius()" />
+                        </td>
+                        <td><input type="button" class="tuslar" value="10^x" onclick="onus()" />
+                        </td>
+                        <td><input type="button" class="tuslar" value="Kök(x)"
+                                onclick="kok()" /> </td>
+                        <td><input type="button" class="tuslar" value="%" onclick="yuzde()" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="tuslar" value="log(x)"
+                                onclick="logaritma()" /> </td>
+                        <td><input type="button" class="tuslar" value="sin(x)"
+                                onclick="sinus()" /> </td>
+                        <td><input type="button" class="tuslar" value="cos(x)"
+                                onclick="kosinus()" /> </td>
+                        <td><input type="button" class="tuslar" value="/" onclick="monit('/')" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="tuslar" value="7" onclick="monit('7')" /> </td>
+                        <td><input type="button" class="tuslar" value="8" onclick="monit('8')" /> </td>
+                        <td><input type="button" class="tuslar" value="9" onclick="monit('9')" /> </td>
+                        <td><input type="button" class="tuslar" value="*" onclick="monit('*')" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="tuslar" value="4" onclick="monit('4')" /> </td>
+                        <td><input type="button" class="tuslar" value="5" onclick="monit('5')" /> </td>
+                        <td><input type="button" class="tuslar" value="6" onclick="monit('6')" /> </td>
+                        <td><input type="button" class="tuslar" value="-" onclick="monit('-')" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="tuslar" value="1" onclick="monit('1')" /> </td>
+                        <td><input type="button" class="tuslar" value="2" onclick="monit('2')" /> </td>
+                        <td><input type="button" class="tuslar" value="3" onclick="monit('3')" /> </td>
+                        <td><input type="button" class="tuslar" value="+" onclick="monit('+')" /> </td>
+                    </tr>
+                    <tr>
+                        <td><input type="button" class="tuslar" value="000" onclick="monit('000')"/> </td>
+                        <td><input type="button" class="tuslar" value="0" onclick="monit('0')" /> </td>
+                        <td><input type="button" class="tuslar" value="." onclick="monit('.')" /> </td>
+                        <td><input type="button" class="tuslar" value="=" id="esittir" onclick="hesapla('=')" /> </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <h3 style="text-align: center;color:white;">Fonksiyon 1 : Girdiğiniz sayı kadar basamaklı şifre üretir. (Türkçe karakterler dahildir)</h3>
+        <h3 style="text-align: center;color:white;">Fonksiyon 2 : Girdiğiniz sayının tek veya çift olduğunu hesaplar. Çıktı 0 ise sayınız çift, 1 ise tektir.</h3>
+        <!--Fonksiyon aciklama h3 leri, inline css kullanildi-->
+
+    <script src="script.js" type="text/JavaScript"></script> <!--Javascript kodlari entegre edildi.-->
+
+</body>
+
+</html>
